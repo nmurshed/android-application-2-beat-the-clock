@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorPrimaryDark"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <Button
+        android:text="@string/add_quiz_takers"
+        android:layout_width="150dp"
+        android:id="@+id/addqt1"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_height="70dp"
+        android:layout_marginTop="200dp"
+        android:onClick="onllickqtbuttons"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"/>
+
+    <Button
+        android:text="@string/delete_quiz_takers"
+        android:layout_width="150dp"
+        android:layout_marginTop="48dp"
+        android:id="@+id/delqt"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_height="70dp"
+        android:onClick="onllickqtbuttons"
+        android:layout_below="@+id/addqt1"
+        android:layout_alignLeft="@+id/addqt1"
+        android:layout_alignStart="@+id/addqt1"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"/>
+</RelativeLayout>

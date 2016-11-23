@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorPrimaryDark"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:text="@string/password2"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/passtext1"
+        android:layout_below="@+id/usertext1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="@string/user_name1"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:id="@+id/usertext1"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/passtext1"
+        android:layout_alignStart="@+id/passtext1" />
+
+    <Button
+        android:text="@string/log_in3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passedit1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:id="@+id/logbutton2"
+        android:onClick="onlicklogqtin"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"/>
+
+    <TextView
+        android:text="@string/beat_the_clock2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/textView"
+        android:gravity="center"
+        android:textStyle="normal|bold|italic"
+        android:textSize="30sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        tools:fontFamily="cursive" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/useredit1"
+        android:hint="Enter User name"
+        android:layout_alignBaseline="@+id/usertext1"
+        android:layout_alignBottom="@+id/usertext1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="19dp"
+        android:layout_marginEnd="19dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/passedit1"
+        android:hint="Enter Password"
+        android:layout_alignBaseline="@+id/passtext1"
+        android:layout_alignBottom="@+id/passtext1"
+        android:layout_alignLeft="@+id/useredit1"
+        android:layout_alignStart="@+id/useredit1" />
+</RelativeLayout>

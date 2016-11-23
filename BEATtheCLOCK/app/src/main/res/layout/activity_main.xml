@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.niyaz.beattheclock.MainActivity">
+
+
+    <Button
+        android:text="@string/login_as_qm"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hometop"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="170dp"
+        android:id="@+id/logqm"
+        android:onClick="onclickloginasqm"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:layout_width="150dp" />
+
+    <TextView
+        android:text="@string/beat_the_clock"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/hometop"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textStyle="normal|bold|italic"
+        tools:fontFamily="cursive" />
+
+    <Button
+        android:text="@string/login_as_qt"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:id="@+id/logqt"
+        android:onClick="onclickloginasqm"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:layout_below="@+id/logqm"
+        android:layout_alignLeft="@+id/logqm"
+        android:layout_alignStart="@+id/logqm" />
+</RelativeLayout>
